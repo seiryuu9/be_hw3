@@ -55,6 +55,27 @@
 ## vlastna metoda - pocitanie notes pouzivatelov
 ![count](screenshots/count.png)
 
+---
+
+## Publish
+![publish](screenshots/publish.png)
+
+---
+
+## Pin
+![pin](screenshots/pin.png)
+
+---
+
+## Categories Update
+![categories_update](screenshots/categories_update.png)
+
+---
+
+## Categories
+![categories](screenshots/categories.png)
+
+
 
 
 
