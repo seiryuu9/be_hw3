@@ -14,6 +14,11 @@ Route::get('users/{user}/notes', [NoteController::class, 'userNotesWithCategorie
 
 Route::get('notes-actions/search', [NoteController::class, 'search']);
 
-Route::get('users/{user}/notes/count', [NoteController::class, 'countForUser']);
+//Route::get('users/{user}/notes/count', [NoteController::class, 'countForUser']);
 
 Route::apiResource('categories', CategoryController::class);
+
+Route::patch('notes/{id}/pin', [NoteController::class, 'pin']);
+Route::patch('notes/{id}/unpin', [NoteController::class, 'unpin']);
+Route::patch('notes/{id}/archive', [NoteController::class, 'archive']);
+Route::patch('notes/{id}/publish', [NoteController::class, 'publish']);
