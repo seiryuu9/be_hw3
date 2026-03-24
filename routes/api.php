@@ -3,6 +3,7 @@
 use App\Http\Controllers\NoteController;
 use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TaskController;
 
 Route::apiResource('notes', NoteController::class);
 
@@ -22,3 +23,5 @@ Route::patch('notes/{id}/pin', [NoteController::class, 'pin']);
 Route::patch('notes/{id}/unpin', [NoteController::class, 'unpin']);
 Route::patch('notes/{id}/archive', [NoteController::class, 'archive']);
 Route::patch('notes/{id}/publish', [NoteController::class, 'publish']);
+
+Route::apiResource('notes.tasks', TaskController::class);
